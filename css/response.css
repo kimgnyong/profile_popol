@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+@media all and (max-width:1919px){
+    #wrap #section1 .wrap .gap .container .text-wrap .text-gap {width:100%;padding:120px 0 50px 0;}
+}
+
+@media all and (max-width:1300px){
+    
+    #wrap #section1 .wrap .gap .container .img-wrap {height:50%;}
+    #wrap #section1 .wrap .gap .container .gal-wrap {width:80%;margin:80px 0 0 50px;}
+    #wrap #section1 .wrap .gap .container .gal-wrap .gal-gap ul.gal-content li.gal-img {width:202px;height:200px;}
+}
+
+@media all and (max-width:1150px){
+    #wrap #skip {display: none;}
+    #wrap {overflow: scroll;overflow-x: hidden;}
+    #wrap::-webkit-scrollbar {width: 10px;}
+    #wrap::-webkit-scrollbar-thumb {background-color: #aec19c;border-radius: 10px;}
+    #wrap::-webkit-scrollbar-track {background-color: #eee;border-radius: 10px;box-shadow: inset 0px 0px 5px white;}
+    #wrap #section1 {position: relative;}
+    #wrap #section1 .wrap .gap .container .title {position: fixed;}
+    #wrap #section2 {position: relative;}
+    #wrap #section2 .wrap .gap .container .title {display: none;}
+    #wrap #section3 {position: relative;}
+    #wrap #section3 .wrap .gap .container .title {display: none;}
+    #wrap #section4 {position: relative;}
+    #wrap #section4 .wrap .gap .container .title {display: none;}
+
+
+    #wrap #section1 .wrap .gap .container .img-wrap.addSect1left {left:100px;}
+    #wrap #section1 .wrap .gap .container .text-wrap.addSect1left {left:100px;}
+    @keyframes addSect1left {
+        0%  {opacity: 0;left:-150px;}
+        100%{opacity: 1;left:100px;}
+      }
+    #wrap #section1 .wrap .gap .container .gal-wrap {left:100px;height:auto;}
+    #wrap #section1 .wrap .gap .container .text-wrap .text-gap {width:100%;padding:120px 0 50px 100px;}
+    #wrap #section1 .wrap .gap .container .text-wrap .text-gap .text-content > h2 {font-size: 28px;}
+    #wrap #section1 .wrap .gap .container .text-wrap .text-gap .text-content > p {font-size: 16px;}
+    
+}
+
+@media all and (max-width:1100px){
+    #wrap #section1 .wrap .gap .container .gal-wrap .gal-gap ul.gal-content li.gal-img {width:150px;height:150px;}
+    #wrap #section1 .wrap .gap .container .text-wrap .text-gap .text-content > h2 > i {display: none;}
+    #wrap #section1 .wrap .gap .container .text-wrap .text-gap .text-content > p > i{ display: none;}
+    #wrap #section1 .wrap .gap .container .text-wrap .text-gap .text-content > h2 {font-size: 26px;}
+    #wrap #section1 .wrap .gap .container .text-wrap .text-gap .text-content > p {font-size: 14px;}
+
+    
+    #wrap #section2 .wrap .gap .container .img-wrap {top:50%;}
+    #wrap #section2 .wrap .gap .container .img-wrap > p {font-size:15px;font-weight: 500;}
+    #wrap #section2 .wrap .gap .container .img-wrap > p > span {font-weight: 600;font-size: 15px;}
+    #wrap #section2 .wrap .gap .container .skill-wrap .skill-gap .skill-content > p > span {font-size: 16px;}
+}
+
+@media all and (max-width:850px){
+    
+    #wrap #section1 .wrap .gap .container .title-header {display: block;}
+    #wrap #section1 .wrap .gap .container .title {display: none;}
+    #wrap #section1 .wrap .gap .container .img-wrap.addSect1left {width:100%;display: block;float:none;margin-top:70px;}
+    #wrap #section1 .wrap .gap .container .text-wrap.addSect1left {width:100%;display: block;float:none;}
+    #wrap #section1 .wrap .gap .container .gal-wrap {width:100%;display: block;float:none;left:-5px;width:330px;margin:20px auto 0 auto;}
+    #wrap #section1 .wrap .gap .container .img-wrap .img-gap {padding:5% 0 0 0%;margin:0 auto;}
+    #wrap #section1 .wrap .gap .container .text-wrap .text-gap {padding:0% 0 0px 0%;}
+    #wrap #section1 .wrap .gap .container .img-wrap.addSect1left {left:0px;text-align: center;}
+    #wrap #section1 .wrap .gap .container .text-wrap.addSect1left {left:0px;text-align: center;}
+    @keyframes addSect1left {
+        0%  {opacity: 0;left:-150px;}
+        100%{opacity: 1;left:0px;}
+    }
+
+
+    #wrap #section2 .wrap .gap .container .skill-wrap {width:100%;left:0px;height:auto;}
+    #wrap #section2 .wrap .gap .container .skill-wrap .scroll-wrap {width:100%;height:10%;top:0;}
+    #wrap #section2 .wrap .gap .container .skill-wrap .scroll-wrap {position: relative;}
+    #wrap #section2 .wrap .gap .container .skill-wrap .scroll-wrap .scroll-gap .scroll-content .full {top:0;}
+    #wrap #section2 .wrap .gap .container .skill-wrap .scroll-wrap .scroll-gap .scroll-content .fill {top:0;}
+    #wrap #section2 .wrap .gap .container .img-wrap {width:100%;right:0%;}
+    #wrap #section2 .wrap .gap .container .skill-wrap .skill-gap .skill-content > p {padding:40px 0px;}
+    #wrap #section2 .wrap .gap .container .img-wrap > p {font-size:18px;font-weight: 500;}
+    #wrap #section2 .wrap .gap .container .img-wrap > p > span {font-weight: 600;font-size: 18px;}
+}
+
+
+@media all and (max-width:400px){
+    #wrap #section1 .wrap .gap .container .text-wrap .text-gap .text-content > h2 {font-size: 24px;}
+    #wrap #section1 .wrap .gap .container .text-wrap .text-gap .text-content > p {font-size: 12px;font-weight: 600;}
+    #wrap #section1 .wrap .gap .container .gal-wrap {width:270px;}
+    #wrap #section1 .wrap .gap .container .gal-wrap .gal-gap ul.gal-content li.gal-img {width:120px;height:120px;}
+
+    #wrap #section2 .wrap .gap .container .img-wrap > p {font-size:15px;font-weight: 500;}
+    #wrap #section2 .wrap .gap .container .img-wrap > p > span {font-weight: 600;font-size: 15px;}
+    #wrap #section2 .wrap .gap .container .img-wrap {top:40%;}
+
+}

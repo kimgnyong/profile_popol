@@ -1,0 +1,18 @@
+@charset "UTF-8";
+* {margin:0;padding:0;vertical-align:middle;}
+html,body {width:100%;}
+html {overflow-y:hidden;}
+body {font:normal 14px/1 'Montserrat Alternates', 'Nanum Gothic', 'Montserrat';color:#000;background:#fff;}
+h1,h2,h3,h4,h5,h6 {font-weight:normal;font-size:14px;}
+em,i,address {font-style:normal;}
+ul,li {list-style:none;}
+.clearfix::after {content:'';display:block;clear:both;}
+a {color:#444;text-decoration:none;}
+a:hover {outline:0;}
+a:focus {outline:0;}
+table {border-collapse:collapse;}
+header,main,section,footer,nav {display:block;}
+::selection {background: transparent;color: #000;}
+
+
+
