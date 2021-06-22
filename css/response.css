@@ -4,6 +4,10 @@
     #wrap #section1 .wrap .gap .container .text-wrap .text-gap {width:100%;padding:120px 0 50px 0;}
 }
 
+@media all and (max-width:1400px){
+    #wrap #section3 .wrap .gap .container .text-wrap .text-gap .text-content .text > a:nth-of-type(1) {margin-bottom:5px;}
+}
+
 @media all and (max-width:1300px){
     
     #wrap #section1 .wrap .gap .container .img-wrap {height:50%;}
@@ -37,6 +41,14 @@
     #wrap #section1 .wrap .gap .container .text-wrap .text-gap {width:100%;padding:120px 0 50px 100px;}
     #wrap #section1 .wrap .gap .container .text-wrap .text-gap .text-content > h2 {font-size: 28px;}
     #wrap #section1 .wrap .gap .container .text-wrap .text-gap .text-content > p {font-size: 16px;}
+
+    #wrap #section3 .wrap {position: relative;width:auto;height:100%;margin-left:96px;}
+    #wrap #section3 .wrap .gap .container .text-wrap .text-gap {margin-right:0;margin: 30% 50px 0 50px;}
+    #wrap #section3 .wrap .gap .container .text-wrap .text-gap .text-content .text > h2 {font-size: 24px;width:100%;}
+    #wrap #section3 .wrap .gap .container .text-wrap .text-gap .text-content .text > p:nth-of-type(1) {font-size: 13px;margin-bottom:14px;}
+    #wrap #section3 .wrap .gap .container .text-wrap .text-gap .text-content .text > p {font-size: 14px;margin-bottom:16px;}
+    #wrap #section3 .wrap .gap .container .text-wrap .text-gap .text-content .text > a {font-size: 16px;line-height: 40px;}
+    #wrap #section3 .wrap .gap .container .text-wrap .text-gap .text-content .text > h3 {font-size: 26px;}
     
 }
 
@@ -52,6 +64,8 @@
     #wrap #section2 .wrap .gap .container .img-wrap > p {font-size:15px;font-weight: 500;}
     #wrap #section2 .wrap .gap .container .img-wrap > p > span {font-weight: 600;font-size: 15px;}
     #wrap #section2 .wrap .gap .container .skill-wrap .skill-gap .skill-content > p > span {font-size: 16px;}
+
+    #wrap #section3 .wrap .gap .container .slide-container .page-btn-wrap .page-btn-gap .page-btn-content .page {margin:0 10px;}
 }
 
 @media all and (max-width:850px){
@@ -80,6 +94,16 @@
     #wrap #section2 .wrap .gap .container .skill-wrap .skill-gap .skill-content > p {padding:40px 0px;}
     #wrap #section2 .wrap .gap .container .img-wrap > p {font-size:18px;font-weight: 500;}
     #wrap #section2 .wrap .gap .container .img-wrap > p > span {font-weight: 600;font-size: 18px;}
+
+    #wrap #section3 .wrap {position: relative;width:100%;height:100%;margin-left:0px;}
+    #wrap #section3 .wrap .gap .container .text-wrap .text-gap {margin-right:0;margin: 30% 0px 0 0px;}
+}
+
+@media all and (max-width:600px){
+    #wrap #section3 .wrap .gap .container .slide-container {width:100%;height:420px;}
+    #wrap #section3 .wrap .gap .container .text-wrap {width:95%;text-align: center;}
+    #wrap #section3 .wrap .gap .container .text-wrap .text-gap {padding:0 20px;margin: 10% 0px 0 0px;}
+    #wrap #section3 .wrap .gap .container .text-wrap .text-gap .text-content .text > h3 {display: none;}
 }
 
 

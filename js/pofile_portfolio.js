@@ -43,17 +43,17 @@
             
             if(winW > 1150){
               scrollIf2 = true;
+              // skipMenuClickFn(0)
             }else if(winW <= 1150){
               scrollIf2 = false;
               $section.css({top:0,opacity:1});
             }
-
-
-            console.log(scrollIf);
           }
+
           $(window).resize(function(){
             resizeFn()
           })
+
           setTimeout(resizeFn,100)
 
           function skipMenuClickFn(idx){
@@ -92,6 +92,7 @@
             }
           })
           
+          
           $(window).on({
             wheel:function(e){
                 if(!$section.is(':animated') && scrollIf === true && scrollIf2 === true){
@@ -111,6 +112,8 @@
               }
             }
           })
+
+          
           
 
           
@@ -242,7 +245,7 @@
             if(winW >= 1150){
               $section2.css({width:winW,height:winH});
             }else if(winW < 1150){
-              $section2.css({width:winW,height:700});
+              $section2.css({width:winW,height:800});
             }
           }
           $(window).resize(function(){
@@ -371,6 +374,7 @@
           var $slideWrap = $('#section3 .slide-view .slide-wrap');
           var $slideView = $('#section3 .slide-view');
           var slideViewW = $slideView.innerWidth();
+          var slideViewW2 = $slideView.innerWidth();
           var $slide = $('#section3 .slide-view .slide-wrap .slide');
           var $slide0 = $('#section3 .slide-view .slide-wrap .slide0');
           var slide0H = $('#section3 .slide-view .slide-wrap .slide0').innerHeight();
@@ -390,17 +394,25 @@
             winW = $(window).innerWidth();
             winH = $(window).innerHeight();
             slideViewW = winW / 2.4120603;
+            slideViewW2 = winW / 1.2
             slide0H = slideViewW *7.0816582;
             slide1H = slideViewW *5.1721105;
             slide2H = slideViewW *3.7776381;
             slide3H = slideViewW *4.7814070;
 
-
-            $slideView.css({width:slideViewW});
-            $slide0.css({height:slide0H})
-            $slide1.css({height:slide1H})
-            $slide2.css({height:slide2H})
-            $slide3.css({height:slide3H})
+            if(winW >600){
+              $slideView.css({width:slideViewW,height:520});
+              $slide0.css({height:slide0H})
+              $slide1.css({height:slide1H})
+              $slide2.css({height:slide2H})
+              $slide3.css({height:slide3H})
+            }else if(winW <= 600){
+              $slideView.css({width:slideViewW2,height:300});
+              $slide0.css({height:slideViewW2*7.0816582})
+              $slide1.css({height:slideViewW2*5.1721105})
+              $slide2.css({height:slideViewW2*3.7776381})
+              $slide3.css({height:slideViewW2*4.7814070})
+            }
             $section3.css({width:winW,height:winH});
           }
           $(window).resize(function(){
@@ -475,16 +487,6 @@
               }
             })
           })
-
-          // setId = setInterval(function(){
-          //   if(t==4){
-          //     prevSlideFn();
-          //     clearInterval(setId);
-          //   }
-          //   t++;
-          //   nextSlideFn();
-          //   // console.log(t);
-          // },10)// 이미지크기가 너무 커서 렉이걸림 시작하자마자 한번 돌려주는게 나은거같다
 
 
         },// 섹션3번 끝
